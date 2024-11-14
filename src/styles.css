@@ -1,0 +1,416 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #363636;
+    --body-color-light: #8C8C8C;
+    --primary-color: #D41E1E;
+    --light-bg: #E4E4E4;
+    --white-color: #ffffff;
+    --primary-color-dark: #ba0303;
+    --text-light-theme: #AFAFAF;
+    --border-color-field: #a0a0a0;
+}
+
+::selection {
+    background-color: var(--primary-color); 
+    color: var(--white-color);       
+}
+
+
+::-moz-selection {
+    background-color: var(--primary-color); 
+    color: var(--white-color);
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    color: var(--body-color);
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,<svg width="50" height="15" viewBox="0 0 50 15" fill="none" xmlns="http://www.w3.org/2000/svg"><line y1="1.75" x2="50" y2="1.75" stroke="%23363636" stroke-width="2.5"/><line x1="20" y1="13.75" x2="50" y2="13.75" stroke="%23363636" stroke-width="2.5"/></svg>');
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background-color: var(--light-bg);
+    color: var(--body-color);
+    border-color: var(--light-bg);
+}
+
+.navbar-brand img {
+    max-height: 47px;
+}
+
+.header-section {
+    position: relative;
+}
+
+.header-section-bg {
+    position: absolute;
+    right: 40px;
+    z-index: -1;
+}
+
+.left ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+.left ul li span{
+    cursor: pointer;
+    padding: 8px;
+    padding-left: 0;
+    color: var(--body-color-light);
+    font-size: 3.7rem;
+    font-weight: 300;
+    line-height: 80px;
+    transition: all .4s;
+}
+.left ul li span.selected {
+    font-weight: 600;
+    color: var(--body-color);
+    transition: all .4s;
+}
+.left ul li span.selected::after {
+    content: "";
+    background-color: var(--primary-color);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-left: 30px;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 6px;
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(30px); /* Start position for slide effect */
+    transition: opacity 1s ease, transform 0.1s ease;
+    margin-top: -52px;
+    transition: all 1s;
+}
+.content.active {
+    display: block;
+    animation: fadeSlideIn 1s ease forwards;
+}
+
+/* Custom keyframes for fade and slide animation */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-section .row{
+    padding-top: 190px;
+}
+
+#offcanvasNavbarLabel img{
+    max-height: 32px;
+    width: auto;
+}
+
+.text-theme{
+    color: var(--primary-color);
+}
+
+.header-desc{
+    border-left: 4px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.header-desc span{
+    color: var(--primary-color);
+}
+
+.header-image{
+    max-height: 340px;
+}
+
+.header-social-icons{
+    gap: 1.7rem;
+}
+.header-social-icons a{
+    transition: all 0.4s ease-in-out;
+}
+.header-social-icons a:hover svg path{
+    fill: var(--primary-color);
+}
+
+.navbar-nav .nav-link{
+    font-size: 1.2rem;
+}
+.navbar-nav .nav-link.active{
+    color: var(--primary-color)!important;
+    font-weight: 600;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--primary-color);
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.product-heading{
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.mt-80{
+    margin-top: 80px;
+}
+
+.product-detail{
+    padding-left: 20px;
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.4rem;
+    width: 90%;
+    font-weight: 300;
+}
+
+
+.btn-theme{
+    background-color: var(--primary-color)!important;
+    color: var(--white-color)!important;
+    width: 145px!important;
+    transition: all 0.5s!important;
+}
+.btn-theme:hover{
+    background-color: var(--primary-color-dark)!important;
+    color: var(--white-color)!important;
+}
+
+.btn-outline-theme{
+    background-color: var(--white-color)!important;
+    color: var(--primary-color)!important;
+    border: 1px solid var(--primary-color)!important;
+    width: 145px!important;
+    transition: all 0.5s!important;
+}
+.btn-outline-theme:hover{
+    background-color: var(--primary-color)!important;
+    color: var(--white-color)!important;
+}
+
+
+.sub-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: all .5s;
+}
+
+.sub-nav li{
+    display: inline;
+    margin-left: 16px;
+}
+
+.sub-nav li a{
+    color: var(--body-color);
+    font-weight: 500;
+}
+
+.sub-nav .active{
+    color: var(--primary-color);
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.mt-70{
+    margin-top: 70px;
+}
+
+.product-detail strong{
+    font-weight: 700;
+}
+
+.footer-logo{
+    max-height: 47px;
+}
+
+.text-theme-light{
+    color: var(--text-light-theme);
+}
+
+.footer-links {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer-links li a{
+    transition: all 0.5s;
+    letter-spacing: 1.8px;
+}
+
+.footer-links li a:hover{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.footer-links li a:hover svg path{
+    fill: var(--primary-color);
+}
+
+.underline-input{
+    border: 0;
+    border-bottom: 1.5px solid var(--border-color-field);
+    border-radius: 0;
+}
+
+.underline-input.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* Button styles */
+.button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding-right: 40px;
+  }
+  
+  .button:hover .button__border-circle {
+    transform: translateX(60px);
+  }
+  
+  .button:hover .button__mask-circle {
+    clip-path: circle(25px at 85px);
+  }
+  
+  .button__text {
+    z-index: 1;
+    font-size: 14px;
+    margin-right: -18px;
+    letter-spacing: 0.05em;
+  }
+  
+  .button__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .button__arrow {
+    left: 35px;
+    height: 3px;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background-color: var(--primary-color);
+  }
+  
+  .button__arrow:after {
+    content: '';
+    width: 0;
+    height: 0;
+    top: -5px;
+    right: -7px;
+    position: absolute;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid var(--primary-color);
+  }
+  
+  .button__border-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color-field);
+    transition: transform 987ms;
+  }
+  
+  .button__mask-circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(25px);
+    transition: clip-path 987ms;
+  }
+  
+  .button__small-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform: translateX(60px);
+    background-color: var(--primary-color);
+  }
+
+/* button end */
+
+
+footer hr{
+    height: 1.5px;
+    background-color: var(--border-color-field);
+}
+
+footer .rights{
+    font-size: 14px;
+    color: var(--text-light-theme);
+}
+
+.social-links a{
+    transition: all .5s;
+}
+
+.social-links a:hover svg path{
+    fill: var(--primary-color);
+}
+
+
+/* media quesries */
+@media(max-width:992px){
+    .social-links{
+        justify-content: center!important;
+    }
+}
+
+
+@media(max-width:786px){
+    .product-detail{
+        width: 100%!important;
+    }
+    .mt-70{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,8 @@
+<app-header  [activeSection]="activeSection" [showSubMenu]="showSubMenu" [logo]="logo"></app-header>
+<!-- <app-main-content (sectionInView)="handleSectionInView($event)"></app-main-content> -->
+<!-- <app-main-content *ngIf="showMainComponent" (sectionInView)="handleSectionInView($event)"></app-main-content> -->
+
+<!-- Router outlet for dynamic content -->
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
