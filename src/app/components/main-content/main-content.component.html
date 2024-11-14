@@ -70,19 +70,6 @@
                                  </div>
                              </div>
                          </div>
-                         <!-- <div id="content-development" class="content">
-                             <div>
-                                 <img src="./assets/img/header-img/header-1.webp" alt="header-1"
-                                     class="img-fluid header-image">
-                                 <div class="header-desc">
-                                     <p class="m-0 fs-4">
-                                         <span>Track</span> and <span>improve</span> employee performance with clear,
-                                         <span>actionable insights</span> that help individuals and teams reach their
-                                         <span>full potential</span>.
-                                     </p>
-                                 </div>
-                             </div>
-                         </div> -->
                      </div>
                  </div>
              </div>
@@ -126,12 +113,12 @@
                             [class.active]="activeIndex === 0"
                             (mouseenter)="setActive(0)"
                         >
-                            <a href="https://v17.angular.io/guide/routing-overview" target="_blank">
+                            <a (click)="doNothing()" target="_blank">
                                 <div class="poll-title">
-                                    Pulse Polls <span class="arrow"></span>
+                                    Spot Recognition <span class="arrow"></span>
                                 </div>
                                 <p class="poll-description">
-                                    Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    Empower employees to recognize anyone, anywhere, with  instant, hassle-free recognition.
                                 </p>
                             </a>
                         </div>
@@ -141,12 +128,14 @@
                             [class.active]="activeIndex === 1"
                             (mouseenter)="setActive(1)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Structured surveys <span class="arrow"></span>
+                                Award Recognition <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Discover a range of structured survey options to gather data efficiently.
+                                Honor employee excellence with prestigious awards (e.g. Champion of the Quarter), carefully nominated and approved by leaders.
                             </p>
+                        </a>
                         </div>
                     
                         <div
@@ -154,12 +143,14 @@
                             [class.active]="activeIndex === 2"
                             (mouseenter)="setActive(2)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Custom Surveys <span class="arrow"></span>
+                                Points & Stars <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Tailor surveys to your specific needs with custom options.
+                                Reward employees with monetary Points for marketplace rewards and non-monetary Stars for leaderboard glory.
                             </p>
+                        </a>
                         </div>
                     
                         <div
@@ -167,12 +158,14 @@
                             [class.active]="activeIndex === 3"
                             (mouseenter)="setActive(3)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Live Polls <span class="arrow"></span>
+                                Leaderboard <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Engage audiences in real-time with live polls.
+                                Foster a culture of recognition and friendly competition by showcasing top recognized employees and top recognizers, filtering by time or department for a personalized view.
                             </p>
+                        </a>
                         </div>
                     
                         <div
@@ -180,109 +173,47 @@
                             [class.active]="activeIndex === 4"
                             (mouseenter)="setActive(4)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Ask a question <span class="arrow"></span>
+                                Rewards Marketplace <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Submit questions for quick feedback or insights.
+                                Unlock the ultimate reward experience with access to 1000+ leading brands from 80+ countries allowing employees to redeem recognition points for their dream reward.
                             </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 5"
+                            (mouseenter)="setActive(5)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Customization <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Make recognition truly yours with our easy-to-use branding tools, allowing you to infuse your organization's unique personality into every spot recognition post and award certificate.
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 6"
+                            (mouseenter)="setActive(6)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Policy Controls <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Maintain a transparent and trustworthy recognition program with our advanced policy controls, detecting and preventing potential misuse or abuse.
+                            </p>
+                        </a>
                         </div>
                     </div>
                     
-                     <!-- <div>
-                        <div class="accordion" id="product-three">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-1" aria-expanded="true" aria-controls="product-three-1">
-                                        <span class="poll-text">Spot Recognition</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-1" class="accordion-collapse collapse show" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Empower employees to recognize anyone, anywhere, with  instant, hassle-free recognition.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-2" aria-expanded="false" aria-controls="product-three-2">
-                                        <span class="poll-text">Award Recognition</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-2" class="accordion-collapse collapse" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Honor employee excellence with prestigious awards (e.g. Champion of the Quarter), carefully nominated and approved by leaders.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-3" aria-expanded="false" aria-controls="product-three-3">
-                                        <span class="poll-text">Points & Stars</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-3" class="accordion-collapse collapse" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Reward employees with monetary Points for marketplace rewards and non-monetary Stars for leaderboard glory.
-                                    </div>
-                                </div>
-                            </div>
-                          
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-4" aria-expanded="false" aria-controls="product-three-4">
-                                        <span class="poll-text">Leaderboard</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-4" class="accordion-collapse collapse" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Foster a culture of recognition and friendly competition by showcasing top recognized employees and top recognizers, filtering by time or department for a personalized view.
-                                    </div>
-                                </div>
-                            </div>
-                          
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-5" aria-expanded="false" aria-controls="product-three-5">
-                                        <span class="poll-text">Rewards Marketplace</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-5" class="accordion-collapse collapse" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Unlock the ultimate reward experience with access to 1000+ leading brands from 80+ countries allowing employees to redeem recognition points for their dream reward.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-6" aria-expanded="false" aria-controls="product-three-6">
-                                        <span class="poll-text">Customization</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-6" class="accordion-collapse collapse" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Make recognition truly yours with our easy-to-use branding tools, allowing you to infuse your organization's unique personality into every spot recognition post and award certificate.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-three-7" aria-expanded="false" aria-controls="product-three-7">
-                                        <span class="poll-text">Policy Controls</span>
-                                    </button>
-                                </h2>
-                                <div id="product-three-7" class="accordion-collapse collapse" data-bs-parent="#product-three">
-                                    <div class="accordion-body poll-body">
-                                        Maintain a transparent and trustworthy recognition program with our advanced policy controls, detecting and preventing potential misuse or abuse.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                     </div> -->
                  </div>
              </div>
          </div>
@@ -325,7 +256,7 @@
                             [class.active]="activeIndexProduct2 === 0"
                             (mouseenter)="setActiveP2(0)"
                         >
-                            <a href="https://v17.angular.io/guide/routing-overview" target="_blank">
+                        <a (click)="doNothing()" target="_blank">
                                 <div class="poll-title">
                                     Pulse Polls <span class="arrow"></span>
                                 </div>
@@ -340,12 +271,14 @@
                             [class.active]="activeIndexProduct2 === 1"
                             (mouseenter)="setActiveP2(1)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
                                 Structured surveys <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
                                 Discover a range of structured survey options to gather data efficiently.
                             </p>
+                        </a>
                         </div>
                     
                         <div
@@ -353,12 +286,14 @@
                             [class.active]="activeIndexProduct2 === 2"
                             (mouseenter)="setActiveP2(2)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
                                 Custom Surveys <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
                                 Tailor surveys to your specific needs with custom options.
                             </p>
+                        </a>
                         </div>
                     
                         <div
@@ -366,12 +301,14 @@
                             [class.active]="activeIndexProduct2 === 3"
                             (mouseenter)="setActiveP2(3)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
                                 Live Polls <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
                                 Engage audiences in real-time with live polls.
                             </p>
+                        </a>
                         </div>
                     
                         <div
@@ -379,101 +316,16 @@
                             [class.active]="activeIndexProduct2 === 4"
                             (mouseenter)="setActiveP2(4)"
                         >
+                        <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
                                 Ask a question <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
                                 Submit questions for quick feedback or insights.
                             </p>
+                        </a>
                         </div>
-                    </div>
-                     <!-- <div>
-                        <div class="accordion" id="product-one">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button poll-button" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-1" aria-expanded="true" aria-controls="product-one-1">
-                                  <span class="poll-text">Employee Engagement Survey</span>
-                                </button>
-                              </h2>
-                              <div id="product-one-1" class="accordion-collapse collapse show" data-bs-parent="#product-one">
-                                <div class="accordion-body poll-body">
-                                    Our flagship survey that is designed to help you uncover the sentiments, motivations and concerns of your employees.                                </div>
-                              </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-2" aria-expanded="false" aria-controls="product-one-2">
-                                  <span class="poll-text">Leadership Survey</span>
-                                </button>
-                              </h2>
-                              <div id="product-one-2" class="accordion-collapse collapse" data-bs-parent="#product-one">
-                                <div class="accordion-body poll-body">
-                                    Understand how leaders are perceived by their teams, identify development opportunities, and enhance leadership capabilities to drive organizational success.                                </div>
-                              </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-3" aria-expanded="false" aria-controls="product-one-3">
-                                  <span class="poll-text">Organization Cutlure Survey</span>
-                                </button>
-                              </h2>
-                              <div id="product-one-3" class="accordion-collapse collapse" data-bs-parent="#product-one">
-                                <div class="accordion-body poll-body">
-                                    Measure, understand, and shape your organization culture with data-driven insights across 10+ cultural dimesnions.                              </div>
-                            </div>
-                          
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-4" aria-expanded="false" aria-controls="product-one-4">
-                                  <span class="poll-text">Onboarding & Exit Surveys</span>
-                                </button>
-                              </h2>
-                              <div id="product-one-4" class="accordion-collapse collapse" data-bs-parent="#product-one">
-                                <div class="accordion-body poll-body">
-                                    Optimize the employee journey with our onboarding and exit surveys, providing insights into the critical first impressions and lasting last impressions of your organization.                              </div>
-                            </div>
-                          
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-5" aria-expanded="false" aria-controls="product-one-5">
-                                  <span class="poll-text">180 / 360 Feedback</span>
-                                </button>
-                              </h2>
-                              <div id="product-one-5" class="accordion-collapse collapse" data-bs-parent="#product-one">
-                                <div class="accordion-body poll-body">
-                                    Gain a comprehensive view of performance with our 180/360 feedback surveys, providing a multi-perspective evaluation of leadership, management, and team members.     
-                                    </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-6" aria-expanded="false" aria-controls="product-one-6">
-                                  <span class="poll-text">Pulse Polls</span>
-                                </button>
-                              </h2>
-                              <div id="product-one-6" class="accordion-collapse collapse" data-bs-parent="#product-one">
-                                <div class="accordion-body poll-body">
-                                    Take the pulse of your organization with our easy-to-use pulse polls, empowering anyone to quickly gather opinions, views, and feedback on any topic.                                    </div>
-                              </div>
-                            </div>
-                            
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                  <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-one-7" aria-expanded="false" aria-controls="product-one-7">
-                                    <span class="poll-text">Custom Surveys</span>
-                                  </button>
-                                </h2>
-                                <div id="product-one-7" class="accordion-collapse collapse" data-bs-parent="#product-one">
-                                  <div class="accordion-body poll-body">
-                                    Bring your unique questions and leverage our reliable technology to collect structured results and actionable insights.                                    </div>
-                                </div>
-                              </div>
-                          </div>                          
-                     </div>
-                 </div>
-             </div> -->
+                    </div> 
          </div>
              </div>
          </div>

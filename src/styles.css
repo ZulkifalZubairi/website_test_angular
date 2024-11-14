@@ -397,7 +397,9 @@ footer .rights{
     fill: var(--primary-color);
 }
 
-
+.poll-section{
+    height: 440px;
+}
 
 .poll-item {
     border-bottom: 1px solid #ddd;

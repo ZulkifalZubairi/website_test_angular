@@ -116,4 +116,24 @@ export class MainContentComponent implements OnInit, AfterViewInit{
   setActiveP2(index: number) {
     this.activeIndexProduct2 = index;
   }
+
+  // for product 3
+  activeIndexProduct3: number = 0;  // Initially set to the first item
+
+  // Method to set the active index on hover
+  setActiveP3(index: number) {
+    this.activeIndexProduct3 = index;
+  }
+  
+  // for product 4
+  activeIndexProduct4: number = 0;  // Initially set to the first item
+
+  // Method to set the active index on hover
+  setActiveP4(index: number) {
+    this.activeIndexProduct4 = index;
+  }
+
+  doNothing() {
+    // Empty function or placeholder
+  }
 }
