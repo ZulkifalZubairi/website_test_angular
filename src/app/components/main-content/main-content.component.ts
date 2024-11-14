@@ -136,4 +136,21 @@ export class MainContentComponent implements OnInit, AfterViewInit{
   doNothing() {
     // Empty function or placeholder
   }
+
+  scrollToSection(sectionId: string) {
+    // Find the target section by its ID
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      // Calculate the scroll position with an offset
+      const yOffset = -100; // Adjust this value as needed
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      // Scroll smoothly to the calculated position
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+    }
+  }
 }
