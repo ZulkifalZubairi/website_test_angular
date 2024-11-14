@@ -318,7 +318,76 @@
                             Gain a comprehensive understanding of your organization with our suite of survey modules, covering every touchpoint of the employee lifecycle. 
                          </p>
                      </div>
-                     <div>
+                     
+                     <div class="poll-section">
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 0"
+                            (mouseenter)="setActiveP2(0)"
+                        >
+                            <a href="https://v17.angular.io/guide/routing-overview" target="_blank">
+                                <div class="poll-title">
+                                    Pulse Polls <span class="arrow"></span>
+                                </div>
+                                <p class="poll-description">
+                                    Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                </p>
+                            </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 1"
+                            (mouseenter)="setActiveP2(1)"
+                        >
+                            <div class="poll-title">
+                                Structured surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Discover a range of structured survey options to gather data efficiently.
+                            </p>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 2"
+                            (mouseenter)="setActiveP2(2)"
+                        >
+                            <div class="poll-title">
+                                Custom Surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Tailor surveys to your specific needs with custom options.
+                            </p>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 3"
+                            (mouseenter)="setActiveP2(3)"
+                        >
+                            <div class="poll-title">
+                                Live Polls <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Engage audiences in real-time with live polls.
+                            </p>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 4"
+                            (mouseenter)="setActiveP2(4)"
+                        >
+                            <div class="poll-title">
+                                Ask a question <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Submit questions for quick feedback or insights.
+                            </p>
+                        </div>
+                    </div>
+                     <!-- <div>
                         <div class="accordion" id="product-one">
                             <div class="accordion-item">
                               <h2 class="accordion-header">
@@ -404,7 +473,7 @@
                           </div>                          
                      </div>
                  </div>
-             </div>
+             </div> -->
          </div>
              </div>
          </div>

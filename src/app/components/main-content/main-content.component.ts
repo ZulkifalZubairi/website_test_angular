@@ -101,11 +101,19 @@ export class MainContentComponent implements OnInit, AfterViewInit{
       });
     });
   }
-
+// for product 1
   activeIndex: number = 0;  // Initially set to the first item
 
   // Method to set the active index on hover
   setActive(index: number) {
     this.activeIndex = index;
+  }
+
+  // for product 2
+  activeIndexProduct2: number = 0;  // Initially set to the first item
+
+  // Method to set the active index on hover
+  setActiveP2(index: number) {
+    this.activeIndexProduct2 = index;
   }
 }
