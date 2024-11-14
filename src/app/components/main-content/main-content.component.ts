@@ -102,5 +102,10 @@ export class MainContentComponent implements OnInit, AfterViewInit{
     });
   }
 
-  
+  activeIndex: number = 0;  // Initially set to the first item
+
+  // Method to set the active index on hover
+  setActive(index: number) {
+    this.activeIndex = index;
+  }
 }
