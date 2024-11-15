@@ -10,16 +10,16 @@
                          </h1>
                          <ul>
                             <li>
-                                <a href="#product-1"><span data-content="recognition" class="selected">Recognition</span></a>
+                                <span data-content="recognition" class="selected" (click)="scrollToSection('product-1')">Recognition</span>
                             </li>
                              <li>
-                                 <span data-content="engagement">Engagement</span>
+                                 <span data-content="engagement" (click)="scrollToSection('product-2')">Engagement</span>
                              </li>
                              <li>
-                                 <span data-content="performance">Performance</span>
+                                 <span data-content="performance" (click)="scrollToSection('product-3')">Performance</span>
                              </li>
                              <li>
-                                 <span data-content="communication">Communication</span>
+                                 <span data-content="communication" (click)="scrollToSection('product-4')">Communication</span>
                              </li>
                          </ul>
                      </div>
@@ -258,10 +258,10 @@
                         >
                         <a (click)="doNothing()" target="_blank">
                                 <div class="poll-title">
-                                    Pulse Polls <span class="arrow"></span>
+                                    Employee Engagement Survey <span class="arrow"></span>
                                 </div>
                                 <p class="poll-description">
-                                    Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    Our flagship survey that is designed to help you uncover the sentiments, motivations and concerns of your employees.
                                 </p>
                             </a>
                         </div>
@@ -273,10 +273,10 @@
                         >
                         <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Structured surveys <span class="arrow"></span>
+                                Leadership Survey <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Discover a range of structured survey options to gather data efficiently.
+                                Understand how leaders are perceived by their teams, identify development opportunities, and enhance leadership capabilities to drive organizational success.
                             </p>
                         </a>
                         </div>
@@ -288,10 +288,10 @@
                         >
                         <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Custom Surveys <span class="arrow"></span>
+                                Organization Cutlure Survey <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Tailor surveys to your specific needs with custom options.
+                                Measure, understand, and shape your organization culture with data-driven insights across 10+ cultural dimesnions.
                             </p>
                         </a>
                         </div>
@@ -303,10 +303,10 @@
                         >
                         <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Live Polls <span class="arrow"></span>
+                                Onboarding & Exit Surveys <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Engage audiences in real-time with live polls.
+                                Optimize the employee journey with our onboarding and exit surveys, providing insights into the critical first impressions and lasting last impressions of your organization.
                             </p>
                         </a>
                         </div>
@@ -318,10 +318,40 @@
                         >
                         <a (click)="doNothing()" target="_blank">
                             <div class="poll-title">
-                                Ask a question <span class="arrow"></span>
+                                180 / 360 Feedback <span class="arrow"></span>
                             </div>
                             <p class="poll-description">
-                                Submit questions for quick feedback or insights.
+                                Gain a comprehensive view of performance with our 180/360 feedback surveys, providing a multi-perspective evaluation of leadership, management, and team members. 
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 5"
+                            (mouseenter)="setActiveP2(5)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Pulse Polls <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Take the pulse of your organization with our easy-to-use pulse polls, empowering anyone to quickly gather opinions, views, and feedback on any topic.
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 6"
+                            (mouseenter)="setActiveP2(6)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Custom Surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Bring your unique questions and leverage our reliable technology to collect structured results and actionable insights. 
                             </p>
                         </a>
                         </div>
@@ -361,7 +391,113 @@
                             Elevate employee performance and engagement with our all-in-one product. Set and achieve goals, foster continuous growth through feedback and catch-ups, and make informed decisions with our analytics and evaluation modules. Simplify performance management and amplify your team's success.
                          </p>
                      </div>
-                     <div>
+                     <div class="poll-section">
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 0"
+                            (mouseenter)="setActiveP2(0)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                                <div class="poll-title">
+                                    Employee Engagement Survey <span class="arrow"></span>
+                                </div>
+                                <p class="poll-description">
+                                    Our flagship survey that is designed to help you uncover the sentiments, motivations and concerns of your employees.
+                                </p>
+                            </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 1"
+                            (mouseenter)="setActiveP2(1)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Leadership Survey <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Understand how leaders are perceived by their teams, identify development opportunities, and enhance leadership capabilities to drive organizational success.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 2"
+                            (mouseenter)="setActiveP2(2)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Organization Cutlure Survey <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Measure, understand, and shape your organization culture with data-driven insights across 10+ cultural dimesnions.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 3"
+                            (mouseenter)="setActiveP2(3)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Onboarding & Exit Surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Optimize the employee journey with our onboarding and exit surveys, providing insights into the critical first impressions and lasting last impressions of your organization.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 4"
+                            (mouseenter)="setActiveP2(4)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                180 / 360 Feedback <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Gain a comprehensive view of performance with our 180/360 feedback surveys, providing a multi-perspective evaluation of leadership, management, and team members. 
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 5"
+                            (mouseenter)="setActiveP2(5)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Pulse Polls <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Take the pulse of your organization with our easy-to-use pulse polls, empowering anyone to quickly gather opinions, views, and feedback on any topic.
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 6"
+                            (mouseenter)="setActiveP2(6)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Custom Surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Bring your unique questions and leverage our reliable technology to collect structured results and actionable insights. 
+                            </p>
+                        </a>
+                        </div>
+                    </div> 
+                     <!-- <div>
                         <div class="accordion" id="product-four">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
@@ -441,7 +577,7 @@
                                 </div>
                             </div>
                         </div>                        
-                     </div>
+                     </div> -->
                  </div>
              </div>
          </div>
