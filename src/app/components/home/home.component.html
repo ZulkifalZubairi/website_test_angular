@@ -1,0 +1,683 @@
+<main>
+    <section class="header-section" >
+         <img src="./assets/img/logo-side.svg" class="header-section-bg">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-8 mt-70">
+                     <div class="left">
+                         <h1 class="text-theme fs-4 fw-bold">
+                             A comprehensive solution for
+                         </h1>
+                         <ul>
+                            <li>
+                                <a href="#product-1"><span data-content="recognition" class="selected">Recognition</span></a>
+                            </li>
+                             <li>
+                                 <span data-content="engagement">Engagement</span>
+                             </li>
+                             <li>
+                                 <span data-content="performance">Performance</span>
+                             </li>
+                             <li>
+                                 <span data-content="communication">Communication</span>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="col-lg-4">
+                     <div class="right">
+                         <div id="content-engagement" class="content ">
+                             <div>
+                                 <img src="./assets/img/header-img/header-1.webp" alt="header-1"
+                                     class="img-fluid header-image">
+                                 <div class="header-desc">
+                                     <p class="m-0 fs-4">
+                                        Nurture <span>employee engagement and drive business success</span> by tuning into the voice of employees and making data-driven decisions based on actionable insights.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div id="content-recognition" class="content active">
+                             <div>
+                                 <img src="./assets/img/header-img/header-1.webp" alt="header-1"
+                                     class="img-fluid header-image">
+                                 <div class="header-desc">
+                                     <p class="m-0 fs-4">
+                                        <span>Supercharge employee productivity and engagement</span> by recognizing them for going the extra mile, living the corporate values or delivering on business goals.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div id="content-performance" class="content">
+                             <div>
+                                 <img src="./assets/img/header-img/header-1.webp" alt="header-1"
+                                     class="img-fluid header-image">
+                                 <div class="header-desc">
+                                     <p class="m-0 fs-4">
+                                        <span>Revolutionize performance management with our AI-powered platform,</span> from AI-recommended SMART OKRs, to progress updates with AI-generated summaries, and continuous growth through AI-driven feedback. 
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div id="content-communication" class="content">
+                             <div>
+                                 <img src="./assets/img/header-img/header-1.webp" alt="header-1"
+                                     class="img-fluid header-image">
+                                 <div class="header-desc">
+                                     <p class="m-0 fs-4">
+                                        Boost workforce <span>collaboration and productivity</span> by building communities of informed employees with Starwall.
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <div class="py-lg-4"></div>
+     <section class="mt-80" id="product-1">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                     <div class="mb-5">
+                         <h2 class="product-heading mb-3">
+                            Recognition
+                         </h2>
+                         <p class="product-detail m-0">
+                            <strong>Supercharge employee productivity and engagement</strong> by recognzing them for going the extra mile, living the corporate values or delivering on business goals.
+                         </p>
+                     </div>
+                     <div class="mb-5">
+                         <div class="d-flex align-items-center gap-3">
+                             <!-- <a href="#" class="btn btn-outline-theme">Learn More</a> -->
+                             <a href="#" class="btn btn-theme">Book A demo</a>
+                         </div>
+                     </div>
+                     <div class="product-image">
+                         <img src="./assets/img/products/product-1.webp" alt="product-1" class="img-fluid">
+                     </div>
+                 </div>
+                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+                     <div class="mb-5">
+                         <h3 Engagement Tools class="text-theme fs-4 fw-bold">
+                             Seamless Engagement Tools
+                         </h3>
+                         <p class="product-detail border-0 w-100 p-0 mt-3">
+                            Unlock the power of recognition with our comprehensive modules that include peer-to-peer spot recognition, organization-driven awards, leaderboard, global marketplace and robust controls.
+                         </p>
+                     </div>
+                     <div class="poll-section">
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 0"
+                            (mouseenter)="setActive(0)"
+                        >
+                            <a (click)="doNothing()" target="_blank">
+                                <div class="poll-title">
+                                    Spot Recognition <span class="arrow"></span>
+                                </div>
+                                <p class="poll-description">
+                                    Empower employees to recognize anyone, anywhere, with  instant, hassle-free recognition.
+                                </p>
+                            </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 1"
+                            (mouseenter)="setActive(1)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Award Recognition <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Honor employee excellence with prestigious awards (e.g. Champion of the Quarter), carefully nominated and approved by leaders.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 2"
+                            (mouseenter)="setActive(2)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Points & Stars <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Reward employees with monetary Points for marketplace rewards and non-monetary Stars for leaderboard glory.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 3"
+                            (mouseenter)="setActive(3)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Leaderboard <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Foster a culture of recognition and friendly competition by showcasing top recognized employees and top recognizers, filtering by time or department for a personalized view.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 4"
+                            (mouseenter)="setActive(4)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Rewards Marketplace <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Unlock the ultimate reward experience with access to 1000+ leading brands from 80+ countries allowing employees to redeem recognition points for their dream reward.
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 5"
+                            (mouseenter)="setActive(5)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Customization <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Make recognition truly yours with our easy-to-use branding tools, allowing you to infuse your organization's unique personality into every spot recognition post and award certificate.
+                            </p>
+                        </a>
+                        </div>
+                        
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndex === 6"
+                            (mouseenter)="setActive(6)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Policy Controls <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Maintain a transparent and trustworthy recognition program with our advanced policy controls, detecting and preventing potential misuse or abuse.
+                            </p>
+                        </a>
+                        </div>
+                    </div>
+                    
+                 </div>
+             </div>
+         </div>
+     </section>
+     <section class="mt-80" id="product-2">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                     <div class="mb-5">
+                         <h2 class="product-heading mb-3">
+                             Engagement
+                         </h2>
+                         <p class="product-detail m-0">
+                            Nurture <strong>employee engagement and drive business success</strong> by tuning into the voice of employees and making data-driven decisions based on actionable insights.
+                         </p>
+                     </div>
+                     <div class="mb-5">
+                         <div class="d-flex align-items-center gap-3">
+                             <!-- <a href="#" class="btn btn-outline-theme">Learn More</a> -->
+                             <a href="#" class="btn btn-theme">Book A demo</a>
+                         </div>
+                     </div>
+                     <div class="product-image">
+                         <img src="./assets/img/products/product-1.webp" alt="product-1" class="img-fluid">
+                     </div>
+                 </div>
+                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+                     <div class="mb-5">
+                         <h3 Engagement Tools class="text-theme fs-4 fw-bold">
+                             Seamless Engagement Tools
+                         </h3>
+                         <p class="product-detail border-0 w-100 p-0 mt-3">
+                            Gain a comprehensive understanding of your organization with our suite of survey modules, covering every touchpoint of the employee lifecycle. 
+                         </p>
+                     </div>
+                     
+                     <div class="poll-section">
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 0"
+                            (mouseenter)="setActiveP2(0)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                                <div class="poll-title">
+                                    Pulse Polls <span class="arrow"></span>
+                                </div>
+                                <p class="poll-description">
+                                    Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                </p>
+                            </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 1"
+                            (mouseenter)="setActiveP2(1)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Structured surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Discover a range of structured survey options to gather data efficiently.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 2"
+                            (mouseenter)="setActiveP2(2)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Custom Surveys <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Tailor surveys to your specific needs with custom options.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 3"
+                            (mouseenter)="setActiveP2(3)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Live Polls <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Engage audiences in real-time with live polls.
+                            </p>
+                        </a>
+                        </div>
+                    
+                        <div
+                            class="poll-item"
+                            [class.active]="activeIndexProduct2 === 4"
+                            (mouseenter)="setActiveP2(4)"
+                        >
+                        <a (click)="doNothing()" target="_blank">
+                            <div class="poll-title">
+                                Ask a question <span class="arrow"></span>
+                            </div>
+                            <p class="poll-description">
+                                Submit questions for quick feedback or insights.
+                            </p>
+                        </a>
+                        </div>
+                    </div> 
+         </div>
+             </div>
+         </div>
+     </section>
+     <section class="mt-80" id="product-3">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                     <div class="mb-5">
+                         <h2 class="product-heading mb-3">
+                            Performance
+                         </h2>
+                         <p class="product-detail m-0">
+                            <strong>Revolutionize performance management with our AI-powered platform,</strong> from AI-recommended SMART OKRs, to progress updates with AI-generated summaries, and continuous growth through AI-driven feedback. 
+                         </p>
+                     </div>
+                     <div class="mb-5">
+                         <div class="d-flex align-items-center gap-3">
+                             <!-- <a href="#" class="btn btn-outline-theme">Learn More</a> -->
+                             <a href="#" class="btn btn-theme">Book A demo</a>
+                         </div>
+                     </div>
+                     <div class="product-image">
+                         <img src="./assets/img/products/product-1.webp" alt="product-1" class="img-fluid">
+                     </div>
+                 </div>
+                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+                     <div class="mb-5">
+                         <h3 Engagement Tools class="text-theme fs-4 fw-bold">
+                             Seamless Engagement Tools
+                         </h3>
+                         <p class="product-detail border-0 w-100 p-0 mt-3">
+                            Elevate employee performance and engagement with our all-in-one product. Set and achieve goals, foster continuous growth through feedback and catch-ups, and make informed decisions with our analytics and evaluation modules. Simplify performance management and amplify your team's success.
+                         </p>
+                     </div>
+                     <div>
+                        <div class="accordion" id="product-four">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button" type="button" data-bs-toggle="collapse" data-bs-target="#product-four-1" aria-expanded="true" aria-controls="product-four-1">
+                                        <span class="poll-text">Goal (OKR) Setting</span>
+                                    </button>
+                                </h2>
+                                <div id="product-four-1" class="accordion-collapse collapse show" data-bs-parent="#product-four">
+                                    <div class="accordion-body poll-body">
+                                        Let our innovative AI engine propose SMART OKRs tailored to your job role, adjust attributes like weightage and due dates to fit your needs, and seamlessly submit to your manager for approval. 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-four-2" aria-expanded="false" aria-controls="product-four-2">
+                                        <span class="poll-text">Progress Updates</span>
+                                    </button>
+                                </h2>
+                                <div id="product-four-2" class="accordion-collapse collapse" data-bs-parent="#product-four">
+                                    <div class="accordion-body poll-body">
+                                        Easily capture key events, activities & tasks on-the-go using private voice or text notes. Our AI engine will generate a concise summary, highlighting your achievements and progress that you can share with your manager.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-four-3" aria-expanded="false" aria-controls="product-four-3">
+                                        <span class="poll-text">Catch-ups & Feedback</span>
+                                    </button>
+                                </h2>
+                                <div id="product-four-3" class="accordion-collapse collapse" data-bs-parent="#product-four">
+                                    <div class="accordion-body poll-body">
+                                        Managers, use our AI engine to generate relevant discussion topics and feedback points, ensuring productive and focused conversations. Employees, easily stay on top of action items and follow-up tasks, and get the feedback they need to grow.
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-four-4" aria-expanded="false" aria-controls="product-four-4">
+                                        <span class="poll-text">Evaluations</span>
+                                    </button>
+                                </h2>
+                                <div id="product-four-4" class="accordion-collapse collapse" data-bs-parent="#product-four">
+                                    <div class="accordion-body poll-body">
+                                        Employees and managers can add context to each OKR with their notes, upload relevant documents, and leverage AI to generate a summary of their assessments.  Starwall gives them the ability to make data-driven decisions and drive growth.
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-four-5" aria-expanded="false" aria-controls="product-four-5">
+                                        <span class="poll-text">Manager Hub</span>
+                                    </button>
+                                </h2>
+                                <div id="product-four-5" class="accordion-collapse collapse" data-bs-parent="#product-four">
+                                    <div class="accordion-body poll-body">
+                                        Focus on what matters most - your team's success! With Manager Hub, you'll revolutionize your team management from one central place and drive remarkable results.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-four-6" aria-expanded="false" aria-controls="product-four-6">
+                                        <span class="poll-text">Analytics</span>
+                                    </button>
+                                </h2>
+                                <div id="product-four-6" class="accordion-collapse collapse" data-bs-parent="#product-four">
+                                    <div class="accordion-body poll-body">
+                                        Transform your employee performance management with AI-powered actionable analytics and drive business outcomes with confidence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <section class="mt-80" id="product-4">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                     <div class="mb-5">
+                         <h2 class="product-heading mb-3">
+                            Communication
+                         </h2>
+                         <p class="product-detail m-0">
+                            Boost workforce <strong>collaboration and productivity</strong> by building communities of informed employees with Starwall.
+                         </p>
+                     </div>
+                     <div class="mb-5">
+                         <div class="d-flex align-items-center gap-3">
+                             <!-- <a href="#" class="btn btn-outline-theme">Learn More</a> -->
+                             <a href="#" class="btn btn-theme">Book A demo</a>
+                         </div>
+                     </div>
+                     <div class="product-image">
+                         <img src="./assets/img/products/product-1.webp" alt="product-1" class="img-fluid">
+                     </div>
+                 </div>
+                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+                     <div class="mb-5">
+                         <h3 Engagement Tools class="text-theme fs-4 fw-bold">
+                             Seamless Engagement Tools
+                         </h3>
+                         <p class="product-detail border-0 w-100 p-0 mt-3">
+                            Enhance collaboration and streamline internal communication with intutive features that make information sharing effortless across all levels.
+                         </p>
+                     </div>
+                     <div>
+                        <div class="accordion" id="product-two">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-1" aria-expanded="true" aria-controls="product-two-1">
+                                        <span class="poll-text">Content Generation</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-1" class="accordion-collapse collapse show" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Effortlessly create engaging content and social posts to share with your colleagues.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-2" aria-expanded="false" aria-controls="product-two-2">
+                                        <span class="poll-text">Content Engagement</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-2" class="accordion-collapse collapse" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Foster community interaction with likes, comments, shares and saves to amplify your message.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-3" aria-expanded="false" aria-controls="product-two-3">
+                                        <span class="poll-text">Content Moderation</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-3" class="accordion-collapse collapse" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Maintain a positive and safe space by reporting, blocking, and deleting inappropriate content.
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-4" aria-expanded="false" aria-controls="product-two-4">
+                                        <span class="poll-text">Communities</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-4" class="accordion-collapse collapse" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Build communities within your organization to cater to different projects, interests and functions.
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-5" aria-expanded="false" aria-controls="product-two-5">
+                                        <span class="poll-text">Messaging</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-5" class="accordion-collapse collapse" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Talk about Buzz in the future
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-6" aria-expanded="false" aria-controls="product-two-6">
+                                        <span class="poll-text">Document Sharing</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-6" class="accordion-collapse collapse" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Future Feature - part of buzz?
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-two-7" aria-expanded="false" aria-controls="product-two-7">
+                                        <span class="poll-text">Content Search</span>
+                                    </button>
+                                </h2>
+                                <div id="product-two-7" class="accordion-collapse collapse" data-bs-parent="#product-two">
+                                    <div class="accordion-body poll-body">
+                                        Future Feature
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- <section class="mt-80" id="product-5">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                     <div class="mb-5">
+                         <h2 class="product-heading mb-3">
+                            Development
+                         </h2>
+                         <p class="product-detail m-0">
+                             Boost employee morale and foster a positive work culture through seamless engagement tools
+                             designed to keep everyone connected and motivated.
+                         </p>
+                     </div>
+                     <div class="mb-5">
+                         <div class="d-flex align-items-center gap-3">
+                             <a href="#" class="btn btn-outline-theme">Learn More</a>
+                             <a href="#" class="btn btn-theme">Book A demo</a>
+                         </div>
+                     </div>
+                     <div class="product-image">
+                         <img src="./assets/img/products/product-1.webp" alt="product-1" class="img-fluid">
+                     </div>
+                 </div>
+                 <div class="col-xl-5 col-lg-6 offset-xl-1" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="500">
+                     <div class="mb-5">
+                         <h3 Engagement Tools class="text-theme fs-4 fw-bold">
+                             Seamless Engagement Tools
+                         </h3>
+                         <p class="product-detail border-0 w-100 p-0 mt-3">
+                             Unlock deeper connections within your organization. From real-time feedback to interactive surveys, you can engage your employees meaningfully, fostering a workplace where every voice is heard and valued.
+                         </p>
+                     </div>
+                     <div>
+                        <div class="accordion" id="product-five">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button" type="button" data-bs-toggle="collapse" data-bs-target="#product-five-1" aria-expanded="true" aria-controls="product-five-1">
+                                        <span class="poll-text">Pulse Polls</span>
+                                    </button>
+                                </h2>
+                                <div id="product-five-1" class="accordion-collapse collapse show" data-bs-parent="#product-five">
+                                    <div class="accordion-body poll-body">
+                                        Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-five-2" aria-expanded="false" aria-controls="product-five-2">
+                                        <span class="poll-text">Structured surveys</span>
+                                    </button>
+                                </h2>
+                                <div id="product-five-2" class="accordion-collapse collapse" data-bs-parent="#product-five">
+                                    <div class="accordion-body poll-body">
+                                        Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-five-3" aria-expanded="false" aria-controls="product-five-3">
+                                        <span class="poll-text">Custom Surveys</span>
+                                    </button>
+                                </h2>
+                                <div id="product-five-3" class="accordion-collapse collapse" data-bs-parent="#product-five">
+                                    <div class="accordion-body poll-body">
+                                        Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-five-4" aria-expanded="false" aria-controls="product-five-4">
+                                        <span class="poll-text">Live Polls</span>
+                                    </button>
+                                </h2>
+                                <div id="product-five-4" class="accordion-collapse collapse" data-bs-parent="#product-five">
+                                    <div class="accordion-body poll-body">
+                                        Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button poll-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#product-five-5" aria-expanded="false" aria-controls="product-five-5">
+                                        <span class="poll-text">Ask a question</span>
+                                    </button>
+                                </h2>
+                                <div id="product-five-5" class="accordion-collapse collapse" data-bs-parent="#product-five">
+                                    <div class="accordion-body poll-body">
+                                        Click here to see how <strong>Pulse Polls</strong> can improve engagement in your organization.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section> -->
+ </main>
